@@ -1,10 +1,10 @@
 <?php
 // Configurações do banco de dados transferidas do seu app.py
-$host = 'tini.click';
-$port = '3306';
+$host = 'localhost';
+$port = '3406';
 $db   = 'zenstudy';
-$user = 'zenstudy';
-$pass = '5564b6c2da8a08044d696ea0a4e82e29';
+$user = 'root';
+$pass = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
@@ -20,6 +20,7 @@ try {
 } catch (\PDOException $e) {
      die("Erro na conexão com o banco de dados: " . $e->getMessage());
 }
+
 
 // Inicia as sessões globais (Substitui o app.secret_key do Flask)
 if (session_status() === PHP_SESSION_NONE) {
