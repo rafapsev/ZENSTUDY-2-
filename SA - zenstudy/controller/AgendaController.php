@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['api'])) {
 
     $eventos = $agendaDAO->buscarEventosPorUsuario($_SESSION['id_cadastro']);
 
-    echo json_encode($eventos);
+    echo "<pre>";
+    print_r($eventos);
     exit;
 }

@@ -7,13 +7,12 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
     redirecionar('/views/login.php');
 }
 ?>
-
 <div class="dashboard-container"> <h2>Bem-vindo(a) ao seu Painel</h2>
 
     <div class="dashboard-grid">
 
         <div class="menu-card">
-            <a href="/views/ferramentas/agenda.php" class="agenda">Agenda e Rotina</a>
+            <a href="/views/ferramentas/calendario.php">Agenda e Rotina</a>
             <p>Organize tarefas, eventos e estudos.</p>
         </div>
 

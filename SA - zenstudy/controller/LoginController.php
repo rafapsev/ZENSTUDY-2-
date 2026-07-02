@@ -9,14 +9,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $usuarioDAO = new UsuarioDAO();
     $user = $usuarioDAO->login($email, $senha);
+    $user = $usuarioDAO->login($email, $senha);
 
     if ($user) {
-
         $_SESSION['logado'] = true;
         $_SESSION['usuario_logado'] = $user['ds_email'];
         $_SESSION['nome_usuario'] = $user['nm_usuario'];
         $_SESSION['id_cadastro'] = $user['id'];
-
         redirecionar('/views/menu.php');
 
     } else {

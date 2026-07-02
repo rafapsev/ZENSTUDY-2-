@@ -17,12 +17,50 @@ $flash = flash();
     </div>
 <?php endif; ?>
 
-<form action="/controller/AgendaController.php" method="post">
-    <input type="text" name="titulo" placeholder="Título" required>
-    <input type="date" name="dt_data" required>
-    <input type="time" name="horario" required>
-    <textarea name="descricao" placeholder="Descrição"></textarea>
-    <button type="submit">Salvar</button>
+<form action="/controller/AgendaController.php" method="post" class="form-agenda">
+
+    <h3>Novo Evento</h3>
+
+    <input
+        type="text"
+        name="titulo"
+        placeholder="Título do evento"
+        required>
+
+    <div class="linha-agenda">
+
+        <input
+            type="date"
+            name="dt_data"
+            required>
+
+        <input
+            type="time"
+            name="horario"
+            required>
+
+    </div>
+
+    <textarea
+        name="descricao"
+        placeholder="Descrição do evento"></textarea>
+
+    <div class="cor-evento">
+        <label for="cor">Cor do evento</label>
+
+        <input
+            type="color"
+            id="cor"
+            name="cor"
+            value="#3788d8">
+    </div>
+
+    <button
+        type="submit"
+        class="btn-agenda">
+        Salvar Evento
+    </button>
+
 </form>
 
 <hr>

@@ -15,7 +15,7 @@ require_once __DIR__ . '/../../config/conexao.php';
             <a href="/views/index.php" class="logo">Zenstudy</a> 
             <div class="navbar-links">
                 <a href="/views/menu.php">Painel</a>
-                <a href="/views/ferramentas/agenda.php">Agenda</a>
+                <a href="/views/ferramentas/calendario.php">Agenda</a>
                 <a href="/views/estudos/pesquisa.php">Pesquisa</a>
                 <a href="/views/estudos/biblioteca.php">Biblioteca</a>
                 <a href="/views/conta/configuracoes.php">Configurações</a>
